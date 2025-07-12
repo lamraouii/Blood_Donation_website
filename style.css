@@ -1,0 +1,68 @@
+
+/*
+brown #514945
+#894242
+#EBD4CC
+*/
+
+/* top */
+#top{
+    text-align: center;
+}
+
+.sowar{
+    display: inline-block;
+}
+
+/* after the viddd */
+
+body{
+    margin: 0;
+}
+.back-color{
+    color: #894242;
+    background-color: #514945;
+}
+
+
+
+.block{
+    display: block;
+}
+
+.inline{
+    display: inline;
+/* cant do margin on top or bottom */
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.flex{
+    display: flex; 
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+
+.item-center{
+    align-items: center;
+}
+
+.p-8{
+    padding: 7px;
+}
+
+.m-8{
+    margin: 8px;
+}
+
+.m-r{
+    margin-right:20px;
+}
+.m-l{
+    margin-left:20px;
+}
