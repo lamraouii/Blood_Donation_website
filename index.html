@@ -2,38 +2,43 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="description" content="blood donation">
-        <title>We're all doctors</title>
+        <meta name="description" content="A platform to raise awareness, share knowledge, and guide you to donate blood — safely, regularly, and impactfully.">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <title>RedHope</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=width-device, initial-scale=1.0">
-
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header >
-            <div class="flex justify-between  back-color p-8" >
+            <div class="flex justify-between txt-bln p-8 relative z-10" >
             <div class="flex item-center">
-                <img src="images/Blood  logo .png" alt="Logo" style="width: 55px; height: 55px;">
-                <h1 id="titre" style="margin: auto;">We're all doctors</h1>
+                <img src="images/Blood  logo .png" alt="Logo" style="width: 55px; height: 55px;" >
+                <h1 id="titre" style="margin: auto;">RedHope</h1>
             </div>
-            <div class="flex  item-center ">
-            <a href="#importance" class="p-8 m-r m-l">Importance</a>
-            <a href="#stats" class="p-8 m-r m-l">Stats</a>
-            <a href="#centers" class="p-8 m-r m-l">Centers</a>
-            <a href="#faq" class="p-8 m-r m-l">FAQ</a>
-            <button class="flex m-r m-l">Contact</button>
+            <div class="flex txt-bln  item-center ">
+            <a href="#importance" class="p-8 txt-bln no-deco link-hvr m-r m-l font-lato" >Importance</a>
+            <a href="#stats" class="p-8 txt-bln no-deco link-hvr m-r m-l">Stats</a>
+            <a href="#centers" class="p-8 txt-bln no-deco link-hvr m-r m-l">Centers</a>
+            <a href="#faq" class="p-8 txt-bln no-deco link-hvr m-r m-l">FAQ</a>
+            <button class="flex txt-bln round-brd border-none bg-btn btn-top-hvr m-r m-l px-8 py-8">CONTACT</button>
             </div>
             </div>
         <!-- change the p with only <a>.
             add an img in place of h1 the title
             addd div ? -->
         </header>
-        <hr>
         <main>
-            <section id="top">
-                <h1>Blood donation</h1>
-                <p>It's a voluntary act that can save lives and is a common procedure in hospitals. Donors can give whole blood, or specific components like red blood cells, plasma, or platelets. </p>
+            <section id="top" class="relative" style="top:-70px;">
+                <img src="images/wallpaper-don.jpg" alt="don du sang" class="wd-full darker object-cover" />
+                <div class="absolute center-absolute z-10" style="color: white; max-width: 500px;">
+                <h1 style="font-size: 60px; text-align: left;" >Your <a href=""  class="no-deco txt-almnd link-hvr">Blood</a>, Their Life</h1>
+                <p style="text-align: left; margin-top: -50px;">A platform to raise awareness, share knowledge, and guide you to donate blood — safely, regularly, and impactfully. </p>
+                <a href="" class="p-8"><button class="txt-bln round-brd border-none bg-btn btn-top-hvr m-r m-l px-8 py-8" style="margin-top: 10px;">DONATE NOW</button></a>
+            </div> 
             </section>
 
             <hr>
@@ -41,21 +46,21 @@
             <section id="intro-imgs">
                 <h2>Blood or water? which one is the most important?</h2>
                 <figure class="sowar">
-                    <img src="images/donDuSang.jpg" alt="tabaro3" >
+                    <img src="images/donDuSang.jpg" alt="tabaro3" style="width: 100%;" >
                     <figcaption>قال الله تعالى في كتابه الكريم: "ومن أحياها فكأنما أحيا الناس جميعًا" [المائدة: 32].
 هذه الآية العظيمة تُلهمنا أن إنقاذ حياة إنسان واحد يُعدّ بمثابة إنقاذ البشرية كلها.
 التبرع بالدم ليس مجرد عمل طبي، بل هو رسالة إنسانية وروحية تُجسّد أسمى معاني الرحمة والعطاء.
 كم من مريض ينتظر وحدة دم، وكم من حادث قد تُنقذ فيه الأرواح بفضل شخص اختار أن يكون سببا في الحياة.</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/tabaro3.png" alt="lifesave">
+                    <img src="images/tabaro3.png" alt="lifesave" style="width: 100%;">
                     <figcaption>هل تعلم أن تبرعًا واحدًا بالدم يمكن أن ينقذ حياة ثلاثة أشخاص؟
 نعم، من خلال فصل مكونات الدم (البلازما، الصفائح الدموية، وخلايا الدم الحمراء)، يمكن استخدام تبرع واحد لعلاج عدة مرضى.
 تخيل أنك تواظب على التبرع كل ثلاثة أشهر، كم من الأرواح ستكون لك بصمة فيها؟
 التبرع المنتظم ليس فقط فعل خير، بل هو مشروع إنساني مستمر... كل قطرة دم تساوي فرصة حياة.</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/lifesave.webp" alt="donation" >
+                    <img src="images/lifesave.webp" alt="donation" style="width: 100%;">
                     <figcaption>يقال إن الماء هو سر الحياة، ولكن ماذا لو توقّف الدم في العروق؟
 الماء يُروِي الجسد، لكن الدم يُبقيه حيًّا.
 بدون الدم، لا يستطيع القلب أن ينبض، ولا الأعضاء أن تؤدي وظائفها.
