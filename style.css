@@ -9,8 +9,31 @@ brown #514945
     text-align: center;
 }
 
-.sowar {
-    display: inline-block;
+.txt-center{
+    text-align: center;
+}
+
+.sowar-width {
+    max-width: 20%;
+    max-height: 500px;
+
+}
+.sowar-center-width {
+    max-width: 20%;
+    max-height: 500px;
+
+}
+.sowar-size {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.brd-rd-img{
+    border-radius: 5px;
+}
+
+.shadow{
+        box-shadow: -3px -3px  #EBD4CC;
 
 }
 
@@ -25,6 +48,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     font-family: "Roboto", sans-serif;
+    background-color: #fcf9f9;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    /* background-color: #894242 ; */
 }
 
 button {
@@ -32,6 +62,37 @@ button {
     font-weight: bold;
     border-color: #EBD4CC;
 }
+
+/* articls section */
+section > article{
+        background-color: white ;
+        /* background-color: lightgray; */
+        max-width:300px ;
+        padding: 10px;
+        margin: 8px;
+        border-radius: 7px;
+        border-bottom: 2px solid #514945;
+        
+}
+section > article:hover{
+    background-color:#fcf9f9 ;
+}
+
+
+.flex-wrap{
+    flex-wrap: wrap;
+    /* flex-flow: column wrap; */
+}
+
+.stats-wd{
+    min-width: 30%;
+    max-width: 300px;
+}
+
+.hight-adjst{
+    min-height: 55px;
+}
+
 
 .txt-upper {
     text-transform: uppercase;
@@ -72,6 +133,14 @@ button {
     justify-content: space-between;
 }
 
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
 
 .item-center {
     align-items: center;
@@ -91,6 +160,9 @@ button {
     padding-right: 16px;
 }
 
+.grid{
+    display: grid;
+}
 
 .m-8 {
     margin: 8px;
@@ -152,8 +224,20 @@ button {
     color: #894242;
 }
 
+.txt-rded {
+    color: #630806;
+}
+
+.txt-reed {
+    color: #bd0505;
+}
+
+.txt-grnd {
+    color: #514945;
+}
+
 .btn-top-hvr:hover {
-    /* color: #514945; */
+    /* color: #; */
     background-color: #514945;
 }
 
