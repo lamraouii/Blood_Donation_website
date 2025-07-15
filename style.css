@@ -54,6 +54,7 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     background-color: #fcf9f9;
+    /* background-color: white; */
 }
 
 h2{
@@ -90,13 +91,17 @@ section  article:hover{
 
 .li-adrs {
     border-bottom: 1px solid #ccc ;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
 
 .flex-wrap{
     flex-wrap: wrap;
     /* flex-flow: column wrap; */
+}
+.flex-flow{
+    /* flex-wrap: wrap;/ */
+    flex-direction: column ;
 }
 
 .stats-wd{
@@ -168,6 +173,8 @@ section  article:hover{
     align-items: center;
 }
 
+
+
 .p-8 {
     padding: 7px;
 }
@@ -178,6 +185,10 @@ section  article:hover{
 }
 
 .px-8 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.p-lr {
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -263,8 +274,16 @@ section  article:hover{
     color: #bd0505;
 }
 
+.txt-blk {
+    font-weight: 700;
+    color: black;
+}
+
 .txt-grnd {
     color: #514945;
+}
+.back-grnd {
+    background-color: #e4e2e2;
 }
 
 .btn-top-hvr:hover {
