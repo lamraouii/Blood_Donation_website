@@ -10,6 +10,10 @@ brown #514945
 
 
 /* top */
+html{
+    scroll-behavior: smooth;
+}
+
 #top {
     text-align: center;
 }
@@ -18,29 +22,76 @@ brown #514945
     text-align: center;
 }
 
+.txt-left{
+    text-align: left;
+}
+
+
+/* haddi dual les figures d #importance,  o lli fihum center dual les centres hopitaux  */
 .sowar-width {
     max-width: 20%;
-    max-height: 500px;
+    max-height: 60vh;
+    min-height: fit-content;
+    border-radius: 15px;
+    transition: transform 0.3s, background-color 0.2s ;
 
 }
+
+.sowar-width:hover{
+    transform: scale(1.1);
+    background-color: #f5efef;
+}
+
 .sowar-center-width {
-    max-width: 25%;
+    max-width: 30%;
     max-height: 500px;
 
 }
 .sowar-size {
+    width: 100%;
+    /* max-width: 300px; */
+    /* height: calc(width ); */
+}
+/* dual imgs dual centers hopit */
+.sowar-size-center {
+    width: 100%;
     max-width: 300px;
-    max-height: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.sowar-size-center:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px  #514945 ;
 }
 
 .brd-rd-img{
-    border-radius: 5px;
+    border-top-right-radius: 15px ;
+    /* border-top-left-radius: 15px ; */
+    border-bottom: 2px #bd0505  solid;
 }
+.brd-rd-img-center{
+    /* border-top-right-radius: 15px ;
+    border-top-left-radius: 15px ; */
+    border-bottom: 2px #bd0505  solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+}
+
+li::marker{
+    content: "🩸";
+    color: #bd0505;
+}
+/* textarea::spelling-error{
+    color: #630806;
+} */
 
 .shadow{
-        box-shadow: -3px -3px  #EBD4CC;
-
+        box-shadow:0 4px 8px  #514945;
+    
 }
+
 
 .darker {
     filter: brightness(70%);
@@ -69,6 +120,8 @@ button {
     border-color: #EBD4CC;
 }
 
+
+
 /* articls section */
 section  article{
         background-color: white ;
@@ -78,16 +131,15 @@ section  article{
         margin: 8px;
         border-radius: 7px;
         border-bottom: 2px solid #514945;
+        transition: box-shadow 0.3s;
         
 }
 section  article:hover{
     background-color:#fcf9f9 ;
+    box-shadow:0 4px 10px  #514945;
+
 }
 
-.cntr {
-  padding-bottom: 5rem; /* or more */
-  margin-bottom: 5rem;
-}
 
 .li-adrs {
     border-bottom: 1px solid #ccc ;
@@ -261,6 +313,15 @@ section  article:hover{
     transform: translate(-50%, -50%);
 
 }
+.bdr-div{
+    box-shadow: 0 4px 8px  #514945;
+    
+}
+
+.bdr-div:hover{
+    border: 2px solid red ; 
+    border-bottom-right-radius: 25px;
+}
 
 .txt-almnd {
     color: #894242;
@@ -269,7 +330,13 @@ section  article:hover{
 .txt-rded {
     color: #630806;
 }
+.bg-rded {
+    background-color: #630806;
+}
 
+.bg-reed {
+    background-color: #bd0505;
+}
 .txt-reed {
     color: #bd0505;
 }
@@ -289,6 +356,9 @@ section  article:hover{
 .btn-top-hvr:hover {
     /* color: #; */
     background-color: #514945;
+}
+.btn-top-hvr {
+    transition: background-color 0.2s;
 }
 
 .link-hvr:hover {
