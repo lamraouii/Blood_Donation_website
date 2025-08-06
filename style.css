@@ -44,7 +44,7 @@ html{
 
 .sowar-center-width {
     max-width: 30%;
-    max-height: 500px;
+    /* max-height: 500px; */
 
 }
 .sowar-size {
@@ -73,14 +73,14 @@ html{
 .brd-rd-img-center{
     /* border-top-right-radius: 15px ;
     border-top-left-radius: 15px ; */
-    border-bottom: 2px #bd0505  solid;
+    border-bottom: 2px #f30606  solid;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 
 }
 
 li::marker{
-    content: "🩸";
+    content: "🩸";  /* 🩺 */
     color: #bd0505;
 }
 /* textarea::spelling-error{
@@ -315,11 +315,11 @@ section  article:hover{
 }
 .bdr-div{
     box-shadow: 0 4px 8px  #514945;
-    
+
 }
 
 .bdr-div:hover{
-    border: 2px solid red ; 
+    border: 2px  red outset ; 
     border-bottom-right-radius: 25px;
 }
 
@@ -364,6 +364,14 @@ section  article:hover{
 .link-hvr:hover {
     color: #514945;
 
+}
+
+.top{
+    position:absolute;
+    z-index: 3;
+    position:fixed;
+    top:300px;
+    left:300px;
 }
 
 /* make responsive for mobile later */
