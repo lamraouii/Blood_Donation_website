@@ -7,6 +7,80 @@ brown #514945
 /* * {
   outline: 1px solid red;
 } */
+.hero {
+  background-image: url('images/wallpaper-don.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95vh; /*full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 700px;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 4rem);
+ /*  clamp(min, preferred, max) is like saying:
+“Use the preferred value,
+but never go smaller than min and never go bigger than max.” */
+
+  color: white;
+}
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: white;
+}
+
+nav.navbar {
+  position: absolute;   /* float above hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;        
+}
+@media (max-width:990px) {
+    nav.navbar{
+        position: relative;
+    }
+}
+
+/* bigger links on wide screens*/
+@media (min-width: 992px) { 
+  .navbar .nav-link {
+    font-size: 1.1rem; 
+    padding: 0.5rem 1rem; 
+    color: white;
+    transition: color 0.3s ease;
+  }
+}
+
+.navbar .nav-link:hover {
+  color: #ff4d4d !important; 
+}
+
+/* anothe solution: 
+        .navbar-collapse.show {
+        background-color: rgba(233, 218, 218, 0.85); 
+        padding: 1rem;
+} */
+
 
 
 /* top */
@@ -28,8 +102,16 @@ html{
 
 
 /* haddi dual les figures d #importance,  o lli fihum center dual les centres hopitaux  */
+.sowar-width-bts {
+    width: 100%;
+    max-height: 60vh;
+    min-height: fit-content;
+    border-radius: 15px;
+    transition: transform 0.3s, background-color 0.2s ;
+
+}
 .sowar-width {
-    max-width: 20%;
+    width: 20%;
     max-height: 60vh;
     min-height: fit-content;
     border-radius: 15px;
@@ -41,16 +123,22 @@ html{
     transform: scale(1.1);
     background-color: #f5efef;
 }
+.sowar-width-bts:hover{
+    transform: scale(1.1);
+    background-color: #f5efef;
+}
+
+.center-title {
+  min-height: 50px;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
 
 .sowar-center-width {
-    max-width: 30%;
-    /* max-height: 500px; */
-
+    width: 30vw;
 }
 .sowar-size {
     width: 100%;
-    /* max-width: 300px; */
-    /* height: calc(width ); */
 }
 /* dual imgs dual centers hopit */
 .sowar-size-center {
@@ -58,6 +146,9 @@ html{
     max-width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
     
+}
+ul{
+    min-width: 150px;
 }
 
 .sowar-size-center:hover {
@@ -67,6 +158,7 @@ html{
 
 .brd-rd-img{
     border-top-right-radius: 15px ;
+    border-top-left-radius: 15px ;
     /* border-top-left-radius: 15px ; */
     border-bottom: 2px #bd0505  solid;
 }
@@ -80,7 +172,7 @@ html{
 }
 
 li::marker{
-    content: "🩸";  /* 🩺 */
+    /*content: "🩸";  /* 🩺 */
     color: #bd0505;
 }
 /* textarea::spelling-error{
@@ -110,7 +202,7 @@ body {
 
 h2{
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     /* background-color: #894242 ; */
 }
 
@@ -185,6 +277,11 @@ section  article:hover{
     color: white;
 }
 
+.txt-bln:hover {
+  color: #dc3545; /* Bootstrap red or any color you prefer */
+  text-decoration: underline; /* optional */
+}
+
 .font-roboto {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -226,7 +323,9 @@ section  article:hover{
 }
 
 
-
+.p-8-btn{
+    padding: 3.5rem;
+}
 .p-8 {
     padding: 7px;
 }
@@ -374,4 +473,67 @@ section  article:hover{
     left:300px;
 }
 
-/* make responsive for mobile later */
+/* make responsive for mobile later : media querisss*/
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  .center-absolute {
+    top: 25%;
+    transform: translate(-50%, -50%);
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txt-bln {
+    font-size: 1rem;
+  }
+
+  .btn-top-hvr {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+  /* / shrink logo / */
+  header img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  /* shrink title text */
+  #titre {
+    font-size: 1.2rem;
+  }
+
+  /* reduce link padding and font size */
+  .p-8 {
+    padding: 0.25rem !important;
+  }
+
+  .txt-bln {
+    font-size: 0.9rem;
+  }
+
+  /* make the nav button smaller */
+  .btn-top-hvr {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* avoid flex wrapping too early */
+  .flex {
+    flex-wrap: nowrap;
+  }
+
+  .justify-between {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+}

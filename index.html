@@ -8,64 +8,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedHope</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap-5.3.7-dist/bootstrap/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/Blood  logo .png">
+    <link rel="icon" type="image/png" href="images/Blood-logo.png">
 </head>
 
 <body>
     <header>
-        <div class="flex justify-between txt-bln p-8 relative z-10">
+            
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent z-10">
+
+        <div class="container-fluid">
+            <!-- Lllogo -->
+            <a class="navbar-brand" href="#">
+            <img src="images/Blood-logo.png" alt="Logo" width="40" height="40">
+            </a>
+            <h1 id="titre" class="mb-0 txt-almnd shadow">RedHope</h1>
+
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible part -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item active">
+                <a class="nav-link " href="#importance">Importance</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#articles">Articles</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#stats">Stats</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#centers">Centers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a> 
+                </li> 
+            </ul>
+
+            <a href="#contact" class="btn btn-outline-danger bg-btn txt-bln btn-top-hvr ms-lg-3">CONTACT</a>
+            </div>
+        </div>
+
+        </nav>
+
+
+
+
+        <!-- <div class="flex justify-between txt-bln p-8 relative z-10">
             <div class="flex item-center">
                 <img src="images/Blood  logo .png" alt="Logo" style="width: 55px; height: 55px;">
                 <h1 id="titre" style="margin: auto;">RedHope</h1>
             </div>
-            <div class="flex txt-bln  item-center ">
-                <a href="#importance" class="p-8 txt-bln no-deco link-hvr m-r m-l ">Importance</a>
-                <a href="#articles" class="p-8 txt-bln no-deco link-hvr m-r m-l">Articles</a>
-                <a href="#stats" class="p-8 txt-bln no-deco link-hvr m-r m-l">Stats</a>
-                <a href="#centers" class="p-8 txt-bln no-deco link-hvr m-r m-l">Centers</a>
-                <a href="#faq" class="p-8 txt-bln no-deco link-hvr m-r m-l">FAQ</a>
-                <button class="flex txt-bln round-brd border-none bg-btn btn-top-hvr m-r m-l px-8 py-8">CONTACT</button>
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 txt-bln  ">
+                <a href="#importance" class="p-8 txt-bln no-deco link-hvr m-r m-l "></a>
+                <a href="#" class="p-8 txt-bln no-deco link-hvr m-r m-l"></a>
+                <a href="#" class="p-8 txt-bln no-deco link-hvr m-r m-l"></a>
+                <a href="#" class="p-8 txt-bln no-deco link-hvr m-r m-l"></a>
+                <a href="#" class="p-8 txt-bln no-deco link-hvr m-r m-l"></a>
+                <button class="flex  round-brd border-none btn-top-hvr m-r m-l px-8 py-8"></button>
             </div>
-        </div>
-        <!-- change the p with only <a>.
-            add an img in place of h1 the title
-            addd div ? -->
-    </header>
+        
+        </div> -->
+</header>
     <main>
-        <section id="top" class="relative" style="top:-70px;">
-            <img src="images/wallpaper-don.jpg" alt="don du sang" class="wd-full darker object-cover" />
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your <a href="" class="no-deco txt-almnd link-hvr">Blood</a>, Their Life</h1>
+                <p>A platform to raise awareness, share knowledge, and guide you to donate blood — safely, regularly, and impactfully..</p>
+                <a href="#centers" class="btn btn-danger">Donate Now</a>
+            </div>
+
+        <!-- <section id="top" class="relative" style="top:-70px;">
+                <img src="images/wallpaper-don.jpg" alt="don du sang" class="wd-full darker object-cover" />
             <div class="absolute center-absolute z-10" style="color: white; max-width: 500px;">
-                <h1 style="font-size: 60px; text-align: left;">Your <a href=""
+                <h1 style="font-size:  3.5rem; text-align: left;">Your <a href=""
                         class="no-deco txt-almnd link-hvr">Blood</a>, Their Life</h1>
                 <p style="text-align: left; margin-top: -20px; font-size: larger;">A platform to raise awareness, share
                     knowledge, and guide you to donate blood — safely, regularly, and impactfully. </p>
-                <a href="#centers" class="p-8"><button
+                <a href="#centers" class="p-8-btn"><button
                         class="txt-bln round-brd border-none bg-btn btn-top-hvr m-r m-l px-8 py-8">DONATE
                         NOW</button></a>
             </div>
+            
+        </section> -->
+
         </section>
 
-        <a href="#top" class=" topp" style="z-index: 4;"><img width="50" height="50"
-                        src="images/icons8-top-80.png" /></a>
+        <div class="text-center my-5">
+            <h2 id="importance" class="fw-bold" style="font-size: clamp(1.6rem, 2.5vw, 2.5rem);">
+                Blood or water? which one is the most important?
+            </h2>
+        </div>
 
-        <h2 id="importance">Blood or water? which one is the most important?</h2>
-        <section id="card-1" class="flex flex-wrap  justify-around  m-8 " style="min-height: 90vh;">
+        <section class="container my-5">
+            
+            <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-3">
+      <figure class="sowar-width-bts txt-center shadow">
+        <img src="images/4rd-img.jpg" alt="tabaro3" class="sowar-size brd-rd-img">
+        <figcaption class="p-8-btn txt-left">
+          <h3>How Many Lives Can You Save?</h3>
+          <p>Did you know that one blood donation can save up to <strong class="txt-almnd">three
+            lives</strong>? Imagine donating every three months... How many lives could you impact over time?</p>
+        </figcaption>
+        <a href="#articles" class="">
+          <button class="txt-bln round-brd border-none bg-reed btn-top-hvr m-r m-l m-b px-8 py-8">Read more</button>
+        </a>
+      </figure>
+    </div>
+                <div class="col-12 col-md-6 col-lg-3">
+      <figure class="sowar-width-bts txt-center shadow">
+        <img src="images/tabaro3-2.png" alt="tabaro3" class="sowar-size brd-rd-img">
+        <figcaption class="p-8-btn txt-left">
+          <h3>The Value of Life</h3>
+                    <p>Allah says in the Holy Quran:
+                        <strong class="txt-almnd">"And whoever saves one life it is as if he had saved mankind
+                            entirely."</strong>
+                        Blood donation is not just a medical act, it is a message of compassion and generosity.
+                    </p>
+        </figcaption>
+        <a href="#articles" class="">
+          <button class="txt-bln round-brd border-none bg-reed btn-top-hvr m-r m-l m-b px-8 py-8">Read more</button>
+        </a>
+      </figure>
+    </div>
+                <div class="col-12 col-md-6 col-lg-3 ">
+      <figure class="sowar-width-bts txt-center shadow">
+        <img src="images/com-don.jpg" alt="tabaro3" class="sowar-size brd-rd-img">
+        <figcaption class="p-8-btn txt-left">
+          <h3>Building a Community of Life-Givers</h3>
+                    <p>When you donate blood, you join a larger family; Each drop you give connects you to strangers in need—mothers, fathers, children, accident
+                        victims, and patients awaiting surgeries.</p>
+        </figcaption>
+        <a href="#articles" class="">
+          <button class="txt-bln round-brd border-none bg-reed btn-top-hvr m-r m-l m-b px-8 py-8">Read more</button>
+        </a>
+      </figure>
+    </div>
+                <div class="col-12 col-md-6 col-lg-3">
+      <figure class="sowar-width-bts txt-center shadow">
+        <img src="images/waterandblood.avif" alt="tabaro3" class="sowar-size brd-rd-img">
+        <figcaption class="p-8-btn txt-left">
+          <h3> Water or Blood - Which Matters More?</h3>
+                    <p>Water nourishes the body, but blood keeps it alive.
+                        Without blood, the heart cannot beat, and the organs cannot function.</p>
+        </figcaption>
+        <a href="#articles" class="">
+          <button class="txt-bln round-brd border-none bg-reed btn-top-hvr m-r m-l m-b px-8 py-8">Read more</button>
+        </a>
+      </figure>
+    </div>
+                
+               
+             </div> 
+</section>
+        <!-- <section id="card-1" class="flex flex-wrap  justify-around  m-8 " style="min-height: 90vh;">
 
             <figure class="sowar-width  txt-center shadow">
                 <img src="images/4rd img.jpg" alt="tabaro3" class=" sowar-size brd-rd-img ">
-                <figcaption class="p-8 txt-left">
+                <figcaption class="p-8-btn txt-left">
                     <h3>How Many Lives Can You Save?</h3>
                     <p>Did you know that one blood donation can save up to <strong class="txt-almnd">three
                             lives</strong>?<br>
                         Imagine donating every three months... How many lives could you impact over time?</p>
 
                 </figcaption>
-                <a href="#articles" class="p-8"><button
+                <a href="#articles" class="p-8-btn"><button
                         class="txt-bln round-brd border-none bg-reed btn-top-hvr m-r m-l m-b px-8 py-8">Read-more</button></a>
             </figure>
 
@@ -90,8 +208,7 @@
                 <img src="images/com-don.jpg" alt="tabaro3" class="sowar-size brd-rd-img">
                 <figcaption class="p-8 txt-left">
                     <h3>Building a Community of Life-Givers</h3>
-                    <p>When you donate blood, you join a larger family united by compassion and solidarity.
-                        Each drop you give connects you to strangers in need—mothers, fathers, children, accident
+                    <p>When you donate blood, you join a larger family; Each drop you give connects you to strangers in need—mothers, fathers, children, accident
                         victims, and patients awaiting surgeries.</p>
                 </figcaption>
                 <a href="#articles" class="p-8"><button
@@ -111,7 +228,7 @@
                         class="txt-bln round-brd border-none bg-reed btn-top-hvr m-r m-l m-b px-8 py-8">Read-more</button></a>
 
             </figure>
-        </section>
+        </section> -->
         <hr id="articles">
         <h2 style="margin: 50px;">Articles</h2>
         <section class="flex flex-wrap justify-center " style="min-height:70vh; padding-bottom: 50px;">
@@ -224,7 +341,8 @@
 
 
 
-        <hr id="centers">
+<hr id="centers">
+
         <h2 style="margin-top: 50px;">Centres</h2>
         <p style="text-align: center; font-size: 24px;">“These centers qre located in <strong class="txt-reed">OUJDA.
             </strong> <a href="#centers-map" class=" no-deco txt-rded link-hvr">See centers near you</a></p>
@@ -233,7 +351,7 @@
 
 
             <figure class="sowar-center-width txt-center">
-                <h3 style="height: 50px;">Regional Blood Transfusion Center (Hôpital El Farabi)</h3>
+                <h3 class="center-title">Regional Blood Transfusion Center (Hôpital El Farabi)</h3>
                 <img src="images/Hopital-Al-Farabi-.jpg" alt="tabaro3" 
                     class="sowar-size-center brd-rd-img-center">
                 <figcaption>
@@ -249,7 +367,7 @@
 
             </figure>
             <figure class="sowar-center-width txt-center">
-                <h3 style="height: 50px;">Regional Blood Transfusion Center (Znqa Merabetin)</h3>
+                <h3 class="center-title">Regional Blood Transfusion Center (Znqa Merabetin)</h3>
                 <img src="images/CRTS. jpg.jpg" alt="tabaro3" class="sowar-size-center brd-rd-img-center">
                 <figcaption>
                     <ul style="text-align: left;">
@@ -266,7 +384,7 @@
             </figure>
 
             <figure class="sowar-center-width txt-center">
-                <h3 style="height: 50px;">Centre Hospitalier Universitaire Mohammed VI</h3>
+                <h3 class="center-title">Centre Hospitalier Universitaire Mohammed VI</h3>
                 <img src="images/chu.jpg" alt="tabaro3"  class="sowar-size-center brd-rd-img-center">
                 <figcaption>
                     <ul style="text-align: left;">
@@ -280,14 +398,14 @@
 
             </figure>
             <figure id="centers-map" class="sowar-center-width txt-center">
-                <h3 style="height: 50px;">Centers Near You</h3>
+                <h3 class="center-title">Centers Near You</h3>
                 <iframe src="https://www.google.com/maps?q=Maroc+centre+de+transfusion+sanguine&output=embed"
                     frameborder="0" class="sowar-size-center brd-rd-img-center" height="300px" width="300px"
                     loading="lazy">
                 </iframe>
 
 
-                <ul style="text-align: left;">
+                <ul style="text-align: left; ">
                     <li class="li-adrs">Go before <strong class="txt-rded">13:00</strong> (especially for the CTRS
                         center) to ensure you're processed on time</li>
                     <li class="li-adrs">Bring your <strong class="txt-rded">moroccan ID</strong>, drink water and eat a
@@ -295,10 +413,6 @@
                     <li class="li-adrs" style="border-bottom: none;">After donation, enjoy provided snacks and rest a
                         bit before leaving.</li>
                 </ul>
-
-
-
-
             </figure>
         </section>
 
@@ -374,7 +488,7 @@
                 <a href="#centers" class=" p-8 txt-blk no-deco link-hvr m-r m-l ">Centers</a>
             </div>
 
-            <form action="" class="flex flex-flow " style="width: 30%;">
+            <form class="flex flex-flow " style="width: 30%;">
                 <label for="comments" class="txt-rded" style="font-size: 24px; ">Send Feedback...</label>
                 <textarea name="comments" id="comments" rows="5" cols="30" class=""></textarea>
                 <button class="txt-bln round-brd border-none bg-btn btn-top-hvr  m-l px-8 py-8 m-t"
@@ -388,7 +502,7 @@
                 href="https://icons8.com/icon/73837/collapse-arrow">Top</a> icon by <a class="no-deco txt-grnd"
                 target="_blank" href="https://icons8.com">Icons8</a></div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
